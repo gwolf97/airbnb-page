@@ -27,6 +27,9 @@ code {
   height: 70px;
   margin-bottom: 25px;
   border-bottom: 1px solid rgba(207, 203, 203, 0.418);
+  position: fixed;
+  top: 0;
+  background-color: white;
 }
 
 .nav-container img {
@@ -39,6 +42,7 @@ code {
   font-family: sans-serif;
   margin: 10px 15px;
   color: #57575a;
+  margin-top: 100px;
 }
 
 .hero h2 {
@@ -72,10 +76,14 @@ code {
 .card-section {
   display: flex;
   overflow-y: hidden;
-  overflow-x: auto;
+  overflow-x: scroll;
   white-space: nowrap;
   width: 100vw;
   height: 400px;
+}
+
+.card-section::-webkit-scrollbar {
+  display: none;
 }
 
 .bold {
@@ -93,11 +101,15 @@ code {
   width: 200px;
   margin: 10px 40px 10px 10px;
   line-height: 20px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 9px;
 }
 
 .card-image {
-  width: 100%;
-  border-radius: 9px;
+  width: 200px;
+  height: 70%;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
   margin-bottom: 9px;
 }
 
@@ -115,4 +127,42 @@ code {
 .card-title {
   margin-top: 2px;
   overflow-wrap: break-word;
+}
+
+/* TrustIcons */
+
+.icon-section {
+  display: flex;
+  height: 350px;
+  background-color: rgb(240, 240, 240);
+  margin: 20px auto 20px auto;
+}
+
+.icon-section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 70px;
+  margin-left: 20px;
+  margin-top: -20px;
+}
+
+.icon-section .container h2 {
+  margin-left: -5px;
+  font-size: 23px;
+}
+
+.icon {
+  height: 45px;
+  margin-bottom: -16px;
+  margin-right: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+.icon-section li {
+  font-size: 14px;
 }
