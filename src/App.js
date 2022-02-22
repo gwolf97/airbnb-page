@@ -20,9 +20,12 @@ function App() {
   })
 
   return (
-    <div className="App">
+    <div className="app">
       <Navbar/>
+      <Hero/>
+      <div className="card-section">
       {cards}
+      </div>
     </div>
   );
 }
