@@ -71,13 +71,16 @@ code {
   font-weight: 700;
 }
 
+.hero a {
+  color: #57575a;
+}
+
 /* Card */
 
 .card-section {
   display: flex;
   overflow-y: hidden;
   overflow-x: scroll;
-  white-space: nowrap;
   width: 100vw;
   height: 400px;
 }
@@ -97,16 +100,21 @@ code {
 .card {
   display: flex;
   flex-direction: column;
-  text-align: justify;
-  width: 200px;
-  margin: 10px 40px 10px 10px;
+  text-align: left;
+  width: 210px;
+  margin: 10px 20px 10px 10px;
   line-height: 20px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   border-radius: 9px;
+  font-size: 12px;
+}
+
+.card .container {
+  padding: 0px 0px 5px 5px;
 }
 
 .card-image {
-  width: 200px;
+  width: 210px;
   height: 70%;
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
@@ -114,19 +122,20 @@ code {
 }
 
 .star {
-  height: 14px;
+  height: 11px;
 }
 
 .title {
   display: flex;
   flex-direction: column;
-  height: 100px;
-  overflow-wrap: break-word;
+  height: 40px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 80%;
 }
 
 .card-title {
   margin-top: 2px;
-  overflow-wrap: break-word;
 }
 
 /* TrustIcons */
@@ -151,6 +160,7 @@ code {
 .icon-section .container h2 {
   margin-left: -5px;
   font-size: 23px;
+  color: #2f2f31;
 }
 
 .icon {
@@ -165,4 +175,58 @@ ul {
 
 .icon-section li {
   font-size: 14px;
+}
+
+/* Breakpoints */
+
+@media only screen and (min-width: 769px) {
+  /* Nav */
+  .nav-container img {
+    margin: -15px 5px 0 20px;
+  }
+
+  /* Hero */
+
+  .hero {
+    margin: 100px 20px 10px 35px;
+  }
+
+  .one-of-a-kind {
+    width: 500px;
+    font-size: 45px;
+    margin-left: -2px;
+  }
+
+  .covid {
+    text-align: left;
+    margin-top: -20px;
+  }
+
+  /* Cards */
+
+  .card-section {
+    margin: 0px 20px;
+  }
+
+  /* Trust Icons */
+
+  .icon-section .container {
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+  }
+
+  .icon-section h2 {
+    width: 26.3%;
+    line-height: 30px;
+    margin-top: -90px;
+    margin-right: 40px;
+    color: #2f2f31;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .icon-section .container h2 {
+    font-size: 25px;
+  }
 }

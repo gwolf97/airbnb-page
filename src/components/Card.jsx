@@ -5,6 +5,7 @@ const Card = (props) => {
         <>
             <div className="card">
                 <img src={`./images/${props.img}`} alt="" className="card-image"/>
+                <div className="container">
                 <div className="card-stats">
                     <img src="./images/rating-icon.png" alt="" className="star"/> 
                     <span className="card-rating">{props.rating}</span>
@@ -15,7 +16,7 @@ const Card = (props) => {
                 <p className="card-title">{props.title}</p>
                 </div>
                 <p className="card-price"><span className="bold">From ${props.price}</span><span className="gray"> / person</span></p>
-                
+                </div>
             </div>
         </>
      );
