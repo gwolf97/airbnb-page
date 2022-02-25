@@ -177,7 +177,52 @@ ul {
   font-size: 14px;
 }
 
-/* Breakpoints */
+/* Cities Section and City Card */
+
+.city-title {
+  margin: 10px 0 20px 21px;
+  color: #29292b;
+}
+
+.city-section {
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  width: 100vw;
+  height: 400px;
+  padding: 0 20px 0px 14px;
+}
+
+.city-section::-webkit-scrollbar {
+  display: none;
+}
+
+.city-card-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 130px;
+  height: 180px;
+  margin: 10px 5px 10px 10px;
+  line-height: 20px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 9px;
+  font-size: 12px;
+}
+
+.city-card-container p {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 0 0 15px;
+}
+
+.city-card-container img {
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+/******** Breakpoints **********/
 
 @media only screen and (min-width: 769px) {
   /* Nav */

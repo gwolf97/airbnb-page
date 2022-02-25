@@ -1,4 +1,4 @@
-let data = [
+const data = [
     {
         id:1,
         title: "Music history culture tour with DJ",
@@ -67,4 +67,6 @@ let data = [
     }
 ]
 
-export default data 
+
+export default data
+
